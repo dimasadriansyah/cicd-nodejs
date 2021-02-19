@@ -4,7 +4,7 @@ const request = supertest(app)
 
 
 it('Call the /youtube endpoint', async done => {
-    const res = await request.get('/youtube')
+    const res = await request.get('/Youtube')
     expect(res.status).toBe(200)
     expect(res.text).toBe('Hello, youtube indonesia!')
     done()
